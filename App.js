@@ -14,10 +14,15 @@ import HomeForFunctional from './HomeForFunctional';
 import SettingForClass from './SettingForClass';
 import RegisterationForm from './RegisterationForm';
 import DeleteSearch from './DeleteSearch';
+import SectionListConversion from './SectionListConversion'
+import Flatlist from './Flatlist'
+import Login from './Login';
+import Sectionlist from './Sectionlist';
+import Signup from './Signup';
 
 const Stack = createNativeStackNavigator();
-
 export default function App(props) {
+  
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -29,7 +34,7 @@ export default function App(props) {
       >
         
         <Stack.Screen name="Home" component={Home} options={{ title: 'Welcome' }} />
-        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+         <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="LearnFlatList" component={LearnFlatList} />
         <Stack.Screen name="Settings" component={Settings} />
@@ -40,6 +45,12 @@ export default function App(props) {
         <Stack.Screen name="SettingForClass" component={SettingForClass} />
         <Stack.Screen name="RegisterationForm" component={RegisterationForm} />
         <Stack.Screen name="DeleteSearch" component={DeleteSearch} />
+        <Stack.Screen name="SectionListConversion" component={SectionListConversion} />
+        
+        <Stack.Screen name="Flatlist" component={Flatlist} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Sectionlist" component={Sectionlist} />
+        <Stack.Screen name="Signup" component={Signup} />
 
       </Stack.Navigator>
     </NavigationContainer>
