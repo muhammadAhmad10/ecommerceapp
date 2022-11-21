@@ -5,7 +5,7 @@ import CustomHook from './CustomHook';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 
 
-import SaveDataHook from './SaveDataHook';
+//import SaveDataHook from './SaveDataHook';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 export default function Search({navigation}) {
   
@@ -42,7 +42,7 @@ export default function Search({navigation}) {
               
                       <View style={{ flex: 1,backgroundColor: 'white' }}>
                         <TouchableOpacity onPress={()=>{
-                          SelectItem(itemData.item.id)
+                          //SelectItem(itemData.item.id)
                         }}
                         
                           
